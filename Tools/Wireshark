@@ -1,0 +1,22 @@
+wireshark -i eth1
+
+# Filter by ip
+ip.add == 10.10.10.9
+
+# Filter by dest ip
+ip.dest == 10.10.10.15
+
+# Filter by source ip
+ip.src == 10.10.16.33
+
+# Filter by tcp port
+tcp.port == 25
+
+# Filter by ip addr and port
+ip.addr == 10.10.14.22 and tcp.port == 8080
+
+# Filter SYN flag
+tcp.flags.syn == 1 and tcp.flags.ack ==0
+
+# Broadcast filter
+eth.dst == ff:ff:ff:ff:ff:ff
