@@ -1,10 +1,10 @@
 #### Tools Usage
 ```bash
-TXT -> Snow
-JPG -> Steghide
-PNG -> zsteg
-Any -> binwalk
-Metadata -> exiftool
+Snow     --> TXT
+Steghide --> .jpg/ .jpeg / .bmp
+zsteg    --> PNG
+binwalk  --> Any
+exiftool --> Metadata
 ```
 
 #### File type check
