@@ -1,6 +1,6 @@
 #### Tools Usage
 ```bash
-Snow     --> TXT
+Snow, stegsnow     --> TXT
 Steghide --> .jpg/ .jpeg / .bmp
 zsteg    --> PNG
 binwalk  --> Any
@@ -31,5 +31,10 @@ Zsteg image.png
 #### Exiftool (Metadata)
 ```bash
 Exiftool image.jpg
+```
+
+#### Stegsnow (extract hidden data from file)
+```bash
+stegsnow -p password -C restricted.txt output.txt 
 ```
 
