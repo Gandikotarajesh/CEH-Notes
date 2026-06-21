@@ -18,6 +18,9 @@ Snow -C -p password file.txt
 #### Steghide (.jpg/ .jpeg / .bmp)
 ```bash
 Steghide extract -sf image.jpg
+
+with Password
+steghide extract -sf MyTrip.jpg -p Password
 ```
 #### Binwalk (Any file to check hidden files)
 ```bash
