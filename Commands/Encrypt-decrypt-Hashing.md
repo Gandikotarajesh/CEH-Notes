@@ -29,3 +29,8 @@ hash-identifier
 Crack MD5
 john --format=Raw-MD5 --wordlist=rockyou.txt hash.txt
 ```
+#### Decrypt with VaraCrypt
+```bash
+Select and choose the option to mount it.
+Enter the decrypted password prompted by VeraCrypt.
+```
