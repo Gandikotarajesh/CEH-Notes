@@ -32,6 +32,17 @@ john --format=Raw-MD5 --wordlist=rockyou.txt hash.txt
 show result
 john --show hash.txt
 ```
+#### Hashcat
+```bash
+hashcat -m 0 hash.txt /usr/share/wordlists/rockyou.txt
+hashcat -m 0 hash.txt --show
+MD5 -> 0
+SHA1 -> 100
+SHA256 -> 1400
+SHA512 -> 1700
+NTLM -> 1000
+bcrypt -> 3200
+```
 #### Decrypt with VaraCrypt
 ```bash
 Select and choose the option to mount it.
