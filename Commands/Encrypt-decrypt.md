@@ -3,8 +3,8 @@
 use CryptoForge tool (windows)
 ```
 #### file is base 64
-Linux
 ```bash
+Linux
 cat file.txt | base64 -d
 
 -d -> decrypt
