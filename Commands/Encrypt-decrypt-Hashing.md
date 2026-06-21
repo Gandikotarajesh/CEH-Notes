@@ -28,6 +28,9 @@ hash-identifier
 
 Crack MD5
 john --format=Raw-MD5 --wordlist=rockyou.txt hash.txt
+
+show result
+john --show hash.txt
 ```
 #### Decrypt with VaraCrypt
 ```bash
