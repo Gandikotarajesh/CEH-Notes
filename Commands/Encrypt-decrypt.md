@@ -17,5 +17,5 @@ tring([System.Convert]::FromBase64String($_)) }
 ```
 #### encryption, decryption, encoding, decoding and hashing
 ```bash
-Cyberchef (windows
+Cyberchef (windows)
 ```
