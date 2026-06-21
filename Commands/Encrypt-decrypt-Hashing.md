@@ -33,4 +33,5 @@ john --format=Raw-MD5 --wordlist=rockyou.txt hash.txt
 ```bash
 Select and choose the option to mount it.
 Enter the decrypted password prompted by VeraCrypt.
+Once mounted, navigate to Retrieve the Secret Code within the mounted VeraCrypt volume. open and extract the secret code contained within. 
 ```
