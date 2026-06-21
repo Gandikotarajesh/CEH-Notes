@@ -8,3 +8,7 @@ cat file.txt | base64 -d
 
 -d -> decrypt
 ```
+#### encryption, decryption, encoding, decoding and hashing
+```bash
+Cyberchef (windows
+```
