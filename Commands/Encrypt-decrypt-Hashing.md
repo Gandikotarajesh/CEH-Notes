@@ -19,3 +19,13 @@ tring([System.Convert]::FromBase64String($_)) }
 ```bash
 Cyberchef (windows)
 ```
+#### John The Ripper
+```bash
+Identiy the hash
+hashid <hash>
+OR
+hash-identifier
+
+Crack MD5
+john --format=Raw-MD5 --wordlist=rockyou.txt hash.txt
+```
