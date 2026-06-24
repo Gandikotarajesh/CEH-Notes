@@ -118,7 +118,86 @@ sessions -i 1
 	> sysinfo
 
 [Note :- 192.168.1.7 is Meta 2 ip] [Note :- 192.168.1.9 is parrot ip]
+```
+#### Burpsuire
+```bash
+In the Browser to send the data through the Burp-suite(when intercept is on)  we have to Set the Connection Settings of the browser to Manual Proxy Configuration and HTTP Proxy = 127.0.0.1  Port = 8080 and the other(HTTP proxy and Socks Host) make them empty and click ok.
 
+make sure intercept is on, to intercept traffice
+```
+#### ZAP
+```bash
+To open ZAP from terminal use zaproxy and hit enter.
+Choose the Automated scan, enter the URL
+Then Start Attack
+Here Spider will crawl to directories, but sometimes it may miss some endpoints
+The final results will be in Alerts
+```
+
+#### Automated Tool - Smart Scanner
+```bash
+ cd wapiti
+ python3 -m venv wapiti3 #to create a virtual env.
+ . wapiti3/bin/activate #activate virtual env.
+ pip install . #to intstall wapiti web application scanner
+ wapiti -u https://[targetSite]
+ 
+ #Note: It would take 10min to complete the scan. And the final report 
+ /root/.wapiti/generated_report/
+ 
+```
+
+#### Dirb
+```bash
+Dirb is a web content scanner used in penetration testing to find hidden directories and files on a web server by brute-forcing URLs using a wordlist.
+
+new terminal
+sudo su
+man dirb
+
+dirb http://<Meta2IP>
+
+Specific search
+dirb <URL> -X .txt
+
+Alternatives: 
+Gobuster 
+nikto
+```
+#### TO FIND THE FIREWALL USED BY TARGE
+```bash
+wafw00f <url>
+
+We can use this also "http-waf-detect.nse "
+
+```
+
+#### WPSCAN — Wordpress sites
+```bash
+sudo apt install wpscan
+wpscan --update -> to update the vulnerability database:
+wpscan --url http://targetsite.com → To detect whether it’s a WordPress site and check for potential vulnerabilities.
+User Enumeration : wpscan --url https://example/ --enumerate u
+Bruteforce: wpscan --url https://example/ --passwords wordlist.txt --usernames samson
+
+brute force attack on wordpress login:
+wpscan --url http://targetsite.com --passwords /path/to/wordlist.txt --usernames admin
+
+Important Options :
+`-e u   (enumerates usernames)`
+`-e p   (enumerates plugins)`
+`-e t   (enumerates themes)`
+`-e ap  (enumerates all plugins)`
+`-e at  (enumerates all themes)`
+`-e dbe (enumerates database exports)`
+`-e vp  (enumerates only vulnerable plugins)`
+`-e vt  (enumerates only vulnerable themes)`
+`-e cb  (enumerates config backups)`
+`-e x   (enumerates all)`
+
+Tips:
+always update the database before scanning
+use --random-user-agent to avoid being blocked
 
 ```
 
