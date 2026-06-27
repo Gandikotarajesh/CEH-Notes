@@ -41,3 +41,12 @@ Exiftool image.jpg
 stegsnow -p password -C restricted.txt output.txt 
 ```
 
+### Windows
+#### OpenStego
+```bash
+openstego extract \
+-sf MyTrip.jpg \
+-p Imagination
+
+java -jar openstego.jar extract -sf MyTrip.jpg -p Imagination
+```
