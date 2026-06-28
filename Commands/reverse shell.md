@@ -1,3 +1,4 @@
+#### We will get root priviles from these
 #### checking for reverse shell
 ```bash
 when we are in target machine check which are present there to get reverse shell
