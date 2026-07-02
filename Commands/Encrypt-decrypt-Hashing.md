@@ -34,6 +34,8 @@ john --show hash.txt
 ```
 #### Hashcat
 ```bash
+hash-identifier or hashid <hash>
+apt install hashid
 hashcat -m 0 hash.txt /usr/share/wordlists/rockyou.txt
 hashcat -m 0 hash.txt --show
 MD5 -> 0
@@ -41,7 +43,11 @@ SHA1 -> 100
 SHA256 -> 1400
 SHA512 -> 1700
 NTLM -> 1000
-bcrypt -> 3200
+bcrypt ($2a$, $2b$) -> 3200
+MD5crypt ($1$) -> 500
+SHA-512crypt ($6$) -> 1800
+MD4 -> 900
+
 ```
 #### Decrypt with VaraCrypt
 ```bash
