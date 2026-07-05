@@ -144,7 +144,7 @@
     
 #### Wordpress
 ```bash
-    - `wpscan -url <domain or ip>`
-    - `wpscan -url <domain or ip> -U user -P pass.txt`
-    - `wpscan -url <domain or ip> -e -u` → Enumerate Usernames.
+    - `wpscan --url <domain or ip>`
+    - `wpscan --url <domain or ip> -U user -P pass.txt`
+    - `wpscan --url <domain or ip> -e -u` → Enumerate Usernames.
 ```
