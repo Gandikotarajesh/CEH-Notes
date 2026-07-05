@@ -21,8 +21,15 @@ Important Options :
 `-e cb  (enumerates config backups)`
 `-e x   (enumerates all)`
 
-Cewl
+# Cewl
 cewl -d 5 -w cewlfile.txt http:/IP/
+
+# Paylods options
+php/meterpreter/reverse_tcp → staged (downloads a second stage)
+php/meterpreter_reverse_tcp → stageless (sends everything at once)
+
+If 1st one not works use 2nd payload
+The stageless payload often works better in lab environments
 
 Tips:
 always update the database before scanning
