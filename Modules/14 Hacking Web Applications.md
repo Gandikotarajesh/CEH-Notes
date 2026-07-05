@@ -182,6 +182,7 @@ Bruteforce: wpscan --url https://example/ --passwords wordlist.txt --usernames s
 
 brute force attack on wordpress login:
 wpscan --url http://targetsite.com --passwords /path/to/wordlist.txt --usernames admin
+wpscan --url <url> -P <Passwords.txt> -U <Users.txt> 
 
 Important Options :
 `-e u   (enumerates usernames)`
@@ -194,6 +195,9 @@ Important Options :
 `-e vt  (enumerates only vulnerable themes)`
 `-e cb  (enumerates config backups)`
 `-e x   (enumerates all)`
+
+Cewl
+cewl -d 5 -w cewlfile.txt http:/IP/
 
 Tips:
 always update the database before scanning
