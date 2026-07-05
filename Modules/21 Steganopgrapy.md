@@ -5,6 +5,9 @@ Steghide --> .jpg/ .jpeg / .bmp
 zsteg    --> PNG
 binwalk  --> Any
 exiftool --> Metadata
+Convert TCP --> For hiding data in TCP/IP packet header
+Openstego --> Hiding and extracting data from image
+Snow --> Hiding and extracting data from a text file.
 ```
 
 #### File type check
@@ -44,9 +47,10 @@ stegsnow -p password -C restricted.txt output.txt
 ### Windows
 #### OpenStego
 ```bash
-openstego extract \
--sf MyTrip.jpg \
--p Imagination
+Hide data -> 
+```
+#### SNOW
+```bash
+SNOW.EXE -C -p "pass" hidden.txt
 
-java -jar openstego.jar extract -sf MyTrip.jpg -p Imagination
 ```
