@@ -24,6 +24,20 @@ Steghide extract -sf image.jpg
 
 with Password
 steghide extract -sf image.jpg -p Password
+
+# Additional detal
+
+which steghide
+sudo apt install steghide -y
+which steghide
+man steghide
+
+# Embeding data
+steghide embed -cf regular_image.jpeg -ef super_secret_stuff.txt
+
+# Extract data from Image
+steghide extract -sf regular_image.jpeg -P <PASS>
+
 ```
 #### Binwalk (Any file to check hidden files)
 ```bash
