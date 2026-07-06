@@ -9,50 +9,14 @@ Web Server: Responsible for static web pages.
 Application server: Responsible for Dynamic pages.
 Data is kept in Database.
 ```
+
+#### Tools
+```bash
+SQLMap  -> For finding sql injection vulnerabilities
+Wpscan -> scanning and finding issues in wordpress websites
+Burpsuite -> For analysing and manupulating the traffic
+```
 ### Vulnerabilities
-#### Insecure direct object reference (IDOR)
-```bash
-A URL like example.com/transaction?id=123 shows your transaction. Changing it to id=124 reveals someone else’s data — this is an IDOR vulnerability.
-```
-#### Server side request Forgery
-```bash
-Server-Side Request Forgery (SSRF) is a web security vulnerability that allows an attacker to manipulate a server to make requests to unintended destinations.
-in short, it involves tracking a server into making request to internal resources, potentially, exposing sensitive data or system that shouldn’t be reachable.
-```
-#### CSRF
-```bash
-CSRF, or Cross-Site Request Forgery, is a type of security vulnerability where an attacker tricks a user's browser into making unwanted actions on a web application where they're authenticated.
-```
-#### Cryptographic Failures
-```bash
-Vulnerability is include Not encrypting for using weak keys/encryption mechanisms, and improperly validated certificate elements.
-```
-#### File Traversal (Directory Traversal)
-```bash
-Attacker tries to access restricted folders or files on the server
-
-you can try:
-dirb -u <Target>
-https://example.com/view?file=images/cat.jpg
-
-If the server is not validating the file path properly, an attacker could do:
-https://example.com/view?file=../../../../etc/passwd
-```
-#### Cross Site Scripting (XXS) - ( HTML / JS)
-```bash
-Attackers inject HTML/JS payloads into input field or URL if there is vulnerability and no validation, can be  used to extract cookies and other information.
-1 Reflected XSS ;
-Temporary method of creating a legitimate link along with malicious payload and send it to victim.
-This is temporary and specific to a victim
-
-<script>alert(document.cookie)</script>
-
-2 Stored XSS
-It is also permanent, here attacker is not going to share any link to the victim, instead attacker compromise the webserver and inside the server attacker is going to add/deploy the malicious script.
-When a user visit a site, the script will be executed and the data will be shared with the attacker.
-<script>alert(document.cookie)</script>
-
-```
 
 #### Command Injection
 ```bash
@@ -204,4 +168,46 @@ always update the database before scanning
 use --random-user-agent to avoid being blocked
 
 ```
+#### Insecure direct object reference (IDOR)
+```bash
+A URL like example.com/transaction?id=123 shows your transaction. Changing it to id=124 reveals someone else’s data — this is an IDOR vulnerability.
+```
+#### Server side request Forgery
+```bash
+Server-Side Request Forgery (SSRF) is a web security vulnerability that allows an attacker to manipulate a server to make requests to unintended destinations.
+in short, it involves tracking a server into making request to internal resources, potentially, exposing sensitive data or system that shouldn’t be reachable.
+```
+#### CSRF
+```bash
+CSRF, or Cross-Site Request Forgery, is a type of security vulnerability where an attacker tricks a user's browser into making unwanted actions on a web application where they're authenticated.
+```
+#### Cryptographic Failures
+```bash
+Vulnerability is include Not encrypting for using weak keys/encryption mechanisms, and improperly validated certificate elements.
+```
+#### File Traversal (Directory Traversal)
+```bash
+Attacker tries to access restricted folders or files on the server
 
+you can try:
+dirb -u <Target>
+https://example.com/view?file=images/cat.jpg
+
+If the server is not validating the file path properly, an attacker could do:
+https://example.com/view?file=../../../../etc/passwd
+```
+#### Cross Site Scripting (XXS) - ( HTML / JS)
+```bash
+Attackers inject HTML/JS payloads into input field or URL if there is vulnerability and no validation, can be  used to extract cookies and other information.
+1 Reflected XSS ;
+Temporary method of creating a legitimate link along with malicious payload and send it to victim.
+This is temporary and specific to a victim
+
+<script>alert(document.cookie)</script>
+
+2 Stored XSS
+It is also permanent, here attacker is not going to share any link to the victim, instead attacker compromise the webserver and inside the server attacker is going to add/deploy the malicious script.
+When a user visit a site, the script will be executed and the data will be shared with the attacker.
+<script>alert(document.cookie)</script>
+
+```
