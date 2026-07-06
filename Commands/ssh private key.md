@@ -18,3 +18,11 @@ then if find work on this path
 or
 check python version
 ```
+#### Method 2
+```bash
+save as id_rsa in local machine
+chmod  600 id_rsa
+ssh root@ip -i id_rsa
+if any error
+ssh root@ip -p 50706 -i id_rsa
+```
