@@ -1,3 +1,8 @@
+#### For Hashing
+```bash
+hashses.com
+crackstation
+```
 #### Hide.cfe decrypt
 ```bash
 use CryptoForge tool (windows)
