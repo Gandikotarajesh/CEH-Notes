@@ -2,6 +2,10 @@
 ```bash
 53, 88, 389, and 445
 ```
+#### RAT
+```bash
+9871, 6703
+```
 #### Common Ports
 ```bash
 3389 -> RDP
