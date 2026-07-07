@@ -54,6 +54,10 @@ SHA-512crypt ($6$) -> 1800
 MD4 -> 900
 
 ```
+#### Findig Hash in Windows
+```bash
+Get-FileHash -Alogorithm sha256 .\file.txt
+```
 #### Decrypt with VaraCrypt
 ```bash
 Select and choose the option to mount it.
