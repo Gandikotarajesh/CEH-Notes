@@ -17,7 +17,10 @@ Wpscan -> scanning and finding issues in wordpress websites
 Burpsuite -> For analysing and manupulating the traffic
 ```
 ### Vulnerabilities
-
+#### IDOR
+```bash
+We just need to add page=123 => we will get flag
+```
 #### Command Injection
 ```bash
 Criminal is going to try to add basic Linux OS commands into user input field is the destination is vulnerable. This may lead attacker injecting malicious commands to get sensitive information from the web server.
