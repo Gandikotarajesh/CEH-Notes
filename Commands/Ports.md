@@ -12,6 +12,12 @@
 23 --> Telnet
 3389 -> RDP
 ```
+### DNS
+```bash
+88
+389
+```
+
 #### Common Ports
 ```bash
 FTP -> 20 21
