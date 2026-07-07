@@ -7,6 +7,10 @@ crackstation
 ```bash
 use CryptoForge tool (windows)
 ```
+#### CRC32
+```bash
+crc32 file.txt
+```
 #### file is base 64
 ```bash
 Linux
