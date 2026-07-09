@@ -5,6 +5,9 @@ sudo find / -name *.txt
 sudo find / -name SpecificFileName.txt
 sudo find /DirecrotyName -name SpecificFileName.txt
 sudo find . -name SpecificFileName.txt
+
+# with Username
+find / -type f -user elyana 2>/dev/null
 ```
 #### Windows
 ```bash
