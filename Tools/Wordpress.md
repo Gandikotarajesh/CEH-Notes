@@ -29,7 +29,16 @@ Tips:
 always update the database before scanning
 use --random-user-agent to avoid being blocked
 ```
-#### To get reverse shell
+#### Reverse shell
+```bash
+Theme Editor
+Plugin upload
+Plugin Editor
+Exploiting vulnerable plugins
+Exploiting vulnerable themes
+WpScan enumeration followed by searching for known vulnerabilities
+```
+#### Theme Editor
 ```bash
 # Themes
 Appearences -> Themes editor ->
