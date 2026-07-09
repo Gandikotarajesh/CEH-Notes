@@ -2,6 +2,10 @@
 ```bash
 sudo apt install wpscan
 wpscan --update -> to update the vulnerability database:
+
+wpscan --url <url> -e p,t,u
+wpscan --url <url> -e ap,at,u
+
 wpscan --url http://targetsite.com → To detect whether it’s a WordPress site and check for potential vulnerabilities.
 User Enumeration : wpscan --url https://example/ --enumerate u
 Bruteforce: wpscan --url https://example/ --passwords wordlist.txt --usernames samson
