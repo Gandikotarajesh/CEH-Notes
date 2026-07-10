@@ -24,3 +24,6 @@ eth.dst == ff:ff:ff:ff:ff:ff
 ```bash
 http.request.method == POST
 ```
+```bash
+1- Password Sniffing using Wireshark- In pcap file apply filter: http.request.method==POST (you will get all the post request) Now to capture password click on edit in menu bar, then near Find packet section, on the "display filter" select "string", also select "Packet details" from the drop down of "Packet list", also change "narrow & wide" to "Narrow UTF-8 & ASCII", and then type "pwd" in the find section.
+```
