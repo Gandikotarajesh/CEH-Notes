@@ -1,3 +1,8 @@
+#### DVWA
+```bash
+`| type "path"` (to display content of file - windows)
+`| cat "path"` (to display content of file - Linux)
+```
 
 #### IDOR
 ```bash
@@ -35,9 +40,7 @@ If Windows
 
 #### File Upload
 ```bash
-Web server allows attackers to upload files to its filesystem without proper validation like name, type, contents or size. Due to this improper validation type of files getting uploaded, an attacker will be able to upload malicious files.
-
-**Commands**
+1**Commands**
 DVWA cred's =>
 username - admin
 passwd - password
