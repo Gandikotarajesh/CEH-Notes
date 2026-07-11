@@ -4,6 +4,11 @@
 `| cat "path"` (to display content of file - Linux)
 ```
 
+#### parameter tampering (Page_id =100)
+```bash
+/index.php?page_id=103  Paramter tampering.
+```
+
 #### IDOR
 ```bash
 We just need to add page=123 => we will get flag
