@@ -6,6 +6,16 @@ ProRat (require password)
 Theef (no pass)
 HTTP RAT 
 ```
+#### Quick notes
+```bash
+- To access RAT → `Theef → Client210.exe` Tool (to get target IP, look for Target with `ports 9871, 6703` open)
+- To find Entry points, Linker info → `PEiD tool`
+- To find Entropy values
+    - `DIE` → Windows (Can also be used to find segment sizes with different hashes)
+    - `ent` → Linux
+- Address of Entry or Entry point Address → `PE Explorer`
+    - Entry Points → `DIE → PE` and cross check with `PEiD` (linker info)
+```
 #### Ports
 ```bash
 Theef default port: 9871, 6703, FTP 2968
@@ -22,7 +32,7 @@ Click to connect and search files.
 #### Theef
 ```bash
 Execute Theef
-Set victim IP and relative ports to 6703 and 2968 (or custom port)
+Set victim IP and relative ports to 9871, 6703 and 2968 (or custom port)
 Click to connect and open file manger.
 ```
 #### NjRat
