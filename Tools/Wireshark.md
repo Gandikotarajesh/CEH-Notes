@@ -1,5 +1,5 @@
 #### Quick notes
-
+```bash
 - To find number of packets associated with IP → `statics -> filter by IPv4--> Source and Destination ---> Then you can apply the filter`
     - Eg: For highest no.of packets sent `tcp.flags.syn == 1 and tcp.flags.ack == 0` or filter my given `IP`
 - Filter with Frame Content → `frame contains "string"`
@@ -11,8 +11,26 @@
         - `tcp.flags.syn == 1`
     - `Statistics → Conversations`, if no. of packets targeted on one IP from different source address and no reply back, it indicates DDoS
     - Detection with Graphs (`Statistics → I/O Graph Menu`) [ if there is a spike in overall packets then its a sus ]
-# Filter by ip
-ip.add == 10.10.10.9
+```
+#### TO find passwords
+```bash
+http.request.method == POST
+
+Password Sniffing using Wireshark- In pcap file apply filter: http.request.method==POST (you will get all the post request)
+Now to capture password click on edit in menu bar, then near Find packet section, on the "display filter" select "string",
+also select "Packet details" from the drop down of "Packet list", also change "narrow & wide" to "Narrow UTF-8 & ASCII", and then type "pwd" in the find section.
+```
+#### IOT
+```bash
+# IoT Publish Message
+Search for "IOT Publish Message" 
+Edit → find packet →  select packet Details  Search for the string or  use frame.contains "IoT Publish Message
+
+# Filter with mqqt
+```
+#### Basic ip Filter
+```bash
+# ip.add == 10.10.10.9
 
 # Filter by dest ip
 ip.dest == 10.10.10.15
@@ -31,9 +49,4 @@ tcp.flags.syn == 1 and tcp.flags.ack ==0
 
 # Broadcast filter
 eth.dst == ff:ff:ff:ff:ff:ff
-
-#### TO find passwords
-http.request.method == POST
-
-
-1- Password Sniffing using Wireshark- In pcap file apply filter: http.request.method==POST (you will get all the post request) Now to capture password click on edit in menu bar, then near Find packet section, on the "display filter" select "string", also select "Packet details" from the drop down of "Packet list", also change "narrow & wide" to "Narrow UTF-8 & ASCII", and then type "pwd" in the find section.
+```
