@@ -1,3 +1,24 @@
+#### WhatWeb
+```bash
+whatweb <url>
+whatweb http://www.abc.com
+```
+#### Firewall
+```bash
+wafw00f
+wafw00f abc.com
+
+We can use this also "http-waf-detect.nse "
+```
+#### Owasp-Zap (Zapproxy)
+```bash
+-> Enter ->  zaproxy
+-> No, I do not want to persist this session at this moment in time option and click on Start
+-> Choose the Automated scan, enter the URL
+-> Then Start Attack
+Here Spider will crawl to directories, but sometimes it may miss some endpoints
+The final results will be in Alerts
+```
 #### DVWA
 ```bash
 `| type "path"` (to display content of file - windows)
@@ -85,14 +106,7 @@ In the Browser to send the data through the Burp-suite(when intercept is on)  we
 
 make sure intercept is on, to intercept traffice
 ```
-#### ZAP
-```bash
-To open ZAP from terminal use zaproxy and hit enter.
-Choose the Automated scan, enter the URL
-Then Start Attack
-Here Spider will crawl to directories, but sometimes it may miss some endpoints
-The final results will be in Alerts
-```
+
 
 #### Automated Tool - Smart Scanner
 ```bash
@@ -115,44 +129,14 @@ Specific search
 dirb <URL> -X .txt
 
 ```
-#### TO FIND THE FIREWALL USED BY TARGE
-```bash
-wafw00f <url>
-We can use this also "http-waf-detect.nse "
-
-```
-
-#### WPSCAN — Wordpress sites
-```bash
-sudo apt install wpscan
-wpscan --update -> to update the vulnerability database:
-wpscan --url http://targetsite.com → To detect whether it’s a WordPress site and check for potential vulnerabilities.
-User Enumeration : wpscan --url https://example/ --enumerate u
-Bruteforce: wpscan --url https://example/ --passwords wordlist.txt --usernames samson
-
-brute force attack on wordpress login:
-wpscan --url http://targetsite.com --passwords /path/to/wordlist.txt --usernames admin
-wpscan --url <url> -P <Passwords.txt> -U <Users.txt> 
-
-Important Options :
-`-e u   (enumerates usernames)`
-`-e p   (enumerates plugins)`
-`-e t   (enumerates themes)`
-`-e ap  (enumerates all plugins)`
-`-e at  (enumerates all themes)`
-`-e dbe (enumerates database exports)`
-`-e vp  (enumerates only vulnerable plugins)`
-`-e vt  (enumerates only vulnerable themes)`
-`-e cb  (enumerates config backups)`
-`-e x   (enumerates all)`
 
 #### Cewl
+```bash
 cewl -d 5 -w cewlfile.txt http:/IP/
 
 Tips:
-always update the database before scanning
+always update the database before scanning wordpress
 use --random-user-agent to avoid being blocked
-
 ```
 #### File Traversal (Directory Traversal)
 ```bash
