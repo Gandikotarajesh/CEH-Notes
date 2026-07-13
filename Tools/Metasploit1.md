@@ -1,3 +1,8 @@
+```bash
+once you got meterpreter session
+sysinfo
+shell -> to get linux shell
+```
 #### Commands
 ```bash
 List all available Meterpreter commands -> ?
