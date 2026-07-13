@@ -39,6 +39,12 @@ Click to connect and search files.
 Execute Theef
 Set victim IP and relative ports to 9871, 6703 and 2968 (or custom port)
 Click to connect and open file manger.
+
+# Process
+-> Navigate to E:\CEH-Tools\CEHv12 Module 07 Malware Threats\Trojans Types\Remote Access Trojans (RAT)\Theef and double-click Client210.exe to access the victim machine remotely.
+-> Enter the IP address of the target machine in the IP field, and leave the Port and FTP fields set to default; click Connect.
+-> Click on File explorer icon > File manager > Expand Hard 
+Drive C: > Users folder > Martin Folder > and find Scan folder > count file present in Scan folder > Enter it as answer.
 ```
 #### NjRat
 ```bash
