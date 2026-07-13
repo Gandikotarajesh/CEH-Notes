@@ -30,10 +30,10 @@ Edit → find packet →  select packet Details  Search for the string or  us
 ```
 #### Basic ip Filter
 ```bash
-# ip.add == 10.10.10.9
+# ip.addr == 10.10.10.9
 
 # Filter by dest ip
-ip.dest == 10.10.10.15
+ip.dst == 10.10.10.15
 
 # Filter by source ip
 ip.src == 10.10.16.33
@@ -50,3 +50,12 @@ tcp.flags.syn == 1 and tcp.flags.ack ==0
 # Broadcast filter
 eth.dst == ff:ff:ff:ff:ff:ff
 ```
+####  Filter HTTP requests
+```bash
+http.request 
+```
+####  Filter DNS queries 
+```bash
+dns.qry.name 
+```
+
