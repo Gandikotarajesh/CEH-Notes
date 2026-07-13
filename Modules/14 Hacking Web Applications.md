@@ -3,6 +3,11 @@
 whatweb <url>
 whatweb http://www.abc.com
 ```
+#### If website given and asks for flag.txt
+```bash
+dirb http://training.cehorg.com -X .txt
+http://training.cehorg.com/Flag.txt
+```
 #### Firewall
 ```bash
 wafw00f
