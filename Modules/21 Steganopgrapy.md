@@ -64,7 +64,7 @@ stegsnow -p password -C restricted.txt output.txt
 ### Windows
 #### OpenStego
 ```bash
-Hide data -> 
+open it > choose Extract data > select image file Ceh.jpg > select folder to save extracted file > Click on extract data.
 ```
 #### SNOW
 ```bash
