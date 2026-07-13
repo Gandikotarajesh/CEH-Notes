@@ -58,4 +58,8 @@ http.request
 ```bash
 dns.qry.name 
 ```
+#### DDoS attack launched against a target at 172.22.10.10
+```bash
+"Statistics" > "IPv4 Statistics" > Source and destination Addresses > Type ip.dst == 172.22.10.10 (In Display Filter)
+```
 
