@@ -6,7 +6,7 @@ zsteg    --> PNG
 binwalk  --> Any
 exiftool --> Metadata
 Convert TCP --> For hiding data in TCP/IP packet header
-Openstego --> Hiding and extracting data from image
+Openstego --> jpg
 Snow --> Hiding and extracting data from a text file.
 
 # GUI
