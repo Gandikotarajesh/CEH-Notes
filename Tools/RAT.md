@@ -40,6 +40,7 @@ Execute Theef
 Set victim IP and relative ports to 9871, 6703 and 2968 (or custom port)
 Click to connect and open file manger.
 
+ nmap -Pn -p 6703 ip/24 
 # Process
 -> Navigate to E:\CEH-Tools\CEHv12 Module 07 Malware Threats\Trojans Types\Remote Access Trojans (RAT)\Theef and double-click Client210.exe to access the victim machine remotely.
 -> Enter the IP address of the target machine in the IP field, and leave the Port and FTP fields set to default; click Connect.
