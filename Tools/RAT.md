@@ -1,3 +1,8 @@
+#### Quick notes
+```bash
+# use this command if there is any RAT related
+ nmap -Pn -n -p 6703 10.10.55.0/24
+```
 #### List Of Tools
 ```bash
 njRAT
