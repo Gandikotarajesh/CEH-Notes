@@ -19,9 +19,35 @@ http://<Linux-IP>/share/file.txt
 ```bash
 filetransfer.io
 ```
+#### Certutil
+```bash
+# Linux Machine
+sudo python3 -m http.server 80
 
+# Windows Machine
+Certutil.exe -Urlcache -f http://172.20.10.10/Ceh.jpg C:\path\to\save\file\Ceh.jpg
+```
 ### Windows to Linux
 #### SMB
 ```bash
 parrot -> places -> browse network -> smb://<ip of windows> -> enter password
 ```
+#### Python
+```bash
+# Windows
+open cmd
+python -m http.server 8000
+# Linux
+http://<Windows-IP>:8000/Ceh.jpg
+or
+wget http://<Windows-IP>:8000/Ceh.jpg
+```
+#### Netcat
+```bash
+# Windows
+nc.exe <Linux-IP> 4444 < file.exe (send)
+
+# Linux
+nc -lvnp 4444 > file.exe
+```
+
