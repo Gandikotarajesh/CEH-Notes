@@ -23,3 +23,26 @@ once he execute that link password will change automatically
 page_id=/etc/passwd
 ```
 
+#### File upload
+```bash
+copy php petesterMonkey code and paste and create shell.php
+upload this file and go to that path
+
+paste after localhost or dvwa
+
+Testing
+intercept on -> send it to repeater
+modify and check whether it is working or no
+
+check content type - image/png
+application/x-php
+```
+#### DOM XSS
+```bash
+select any language
+at link -> replace language with "<script>alert("Hacked")<script>" or "<script>alert(document.cookie)<script>"
+```
+#### Reflected XSS
+```bash
+<script>alert(document.cookie)<script>
+```
