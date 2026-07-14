@@ -1,3 +1,9 @@
+#### Reverse shell path
+```bash
+/usr/share/webshells/php/php-reverse-shell.php
+just change ip and port in this code
+```
+
 #### WhatWeb
 ```bash
 whatweb <url>
