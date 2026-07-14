@@ -61,6 +61,7 @@ MD4 -> 900
 #### Findig Hash in Windows
 ```bash
 Get-FileHash -Alogorithm sha256 .\file.txt
+Get-FileHash C:\Users\Public\Ceh.jpg -Algorithm SHA1
 ```
 #### Decrypt with VaraCrypt
 ```bash
