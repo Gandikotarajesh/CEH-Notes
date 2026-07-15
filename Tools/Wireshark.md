@@ -1,3 +1,7 @@
+#### Expert Info Analasys
+```bash
+Wireshark -> Analyse -> Expert Information
+```
 #### Quick notes
 ```bash
 - To find number of packets associated with IP → `statics -> filter by IPv4--> Source and Destination ---> Then you can apply the filter`
@@ -61,5 +65,9 @@ dns.qry.name
 #### DDoS attack launched against a target at 172.22.10.10
 ```bash
 "Statistics" > "IPv4 Statistics" > Source and destination Addresses > Type ip.dst == 172.22.10.10 (In Display Filter)
+```
+#### IOT packet containing the "High_temperature"
+```bash
+mqtt && frame contains "High_tempurature"
 ```
 
