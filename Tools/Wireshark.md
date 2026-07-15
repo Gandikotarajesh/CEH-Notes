@@ -2,6 +2,10 @@
 ```bash
 Wireshark -> Analyse -> Expert Information
 ```
+#### Filter with Subnet
+```bash
+ip.addr == 192.168.1.0/24
+```
 #### Quick notes
 ```bash
 - To find number of packets associated with IP → `statics -> filter by IPv4--> Source and Destination ---> Then you can apply the filter`
