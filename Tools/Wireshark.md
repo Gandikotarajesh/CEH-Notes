@@ -23,6 +23,8 @@ ip.addr == 192.168.1.0/24
 #### TO find passwords
 ```bash
 http.request.method == POST
+check HTTP requests
+
 
 Password Sniffing using Wireshark- In pcap file apply filter: http.request.method==POST (you will get all the post request)
 Now to capture password click on edit in menu bar, then near Find packet section, on the "display filter" select "string",
