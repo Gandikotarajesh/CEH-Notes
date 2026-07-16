@@ -13,4 +13,5 @@ find / -type f -user elyana 2>/dev/null
 ```bash
 dir \webpent.txt /s /b
 tree → Both Linux and Windows.
+dir “sa_code* /s /b”
 ```
