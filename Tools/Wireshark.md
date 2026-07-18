@@ -75,6 +75,13 @@ or
 Go to statistics IPv4 addresses--> Source and Destination ---> Then you can apply the filter given 
 tcp.flags.syn == 1 and tcp.flags.ack == 0  
 ```
+
+####  DDoS attack launched against a target at 10.10.1.10
+```bash
+ Go to statics → converstaoins
+ click IPv4 tab
+In Address A(attacker: find the highest packet count here) and B(victim: 10.10.1.10) columns 
+```
 #### IOT packet containing the "High_temperature"
 ```bash
 mqtt && frame contains "High_tempurature"
