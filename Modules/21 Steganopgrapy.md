@@ -69,5 +69,20 @@ open it > choose Extract data > select image file Ceh.jpg > select folder to sav
 #### SNOW
 ```bash
 SNOW.EXE -C -p "pass" hidden.txt
+```
+#### Sample
+```bash
+# Run strings to see if any text is hidden
+strings MyTrip.jpg | grep -E '[A-Za-z0-9]{8}'
+Looks for 8-character alphanumeric string
 
+# Try extracting hidden content with steghide
+steghide extract -sf MyTrip.jpg
+If asked for passphrase and not given, just press Enter
+
+# Read the extracted file
+cat steg.txt | grep -E '[A-Za-z0-9]{8}'
+
+Alternative method
+binwalk -e MyTrip.jpg
 ```
