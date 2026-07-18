@@ -122,7 +122,13 @@ ip && id
 
 #### parameter tampering (Page_id =100)
 ```bash
-
+# Quick Notes
+-----------
+wordpress
+sql
+parameter tampering
+nmap -sV --script=http-enum <target>
+-----------
 Check Wordpress module for more details
 
 /index.php?page_id=103 ->  Paramter tampering.
