@@ -84,7 +84,10 @@ ip && id
 
 #### parameter tampering (Page_id =100)
 ```bash
-/index.php?page_id=103  Paramter tampering.
+
+Check Wordpress module for more details
+
+/index.php?page_id=103 ->  Paramter tampering.
 
 try
 sqlmap -u "http://www.cehorg.com/page.php?page_id=84" --dbs
