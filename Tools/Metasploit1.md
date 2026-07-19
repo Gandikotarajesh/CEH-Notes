@@ -2,6 +2,12 @@
 ```bash
 search type:exploit smb
 ```
+#### Hashes of user
+```bash
+hashdump
+
+Note : Execute in meterpreter session
+```
 ```bash
 once you got meterpreter session
 sysinfo
