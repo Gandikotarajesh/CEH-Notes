@@ -15,3 +15,7 @@ dir \webpent.txt /s /b
 tree → Both Linux and Windows.
 dir “sa_code* /s /b”
 ```
+#### Contents in windows
+```bash
+type flag.txt
+```
