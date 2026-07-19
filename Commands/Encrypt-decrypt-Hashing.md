@@ -40,6 +40,11 @@ john --format=Raw-MD5 --wordlist=rockyou.txt hash.txt
 
 show result
 john --show hash.txt
+
+# SHA256
+john --format=Raw-SHA256 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+
+
 ```
 #### Hashcat
 ```bash
@@ -57,6 +62,12 @@ MD5crypt ($1$) -> 500
 SHA-512crypt ($6$) -> 1800
 MD4 -> 900
 
+```
+
+####  Hashes with Salt
+```bash
+need to combine both hash and salt in below format
+hash:salt
 ```
 #### Findig Hash in Windows
 ```bash
