@@ -1,3 +1,7 @@
+#### Filter to get exploits for perticular service
+```bash
+search type:exploit smb
+```
 ```bash
 once you got meterpreter session
 sysinfo
