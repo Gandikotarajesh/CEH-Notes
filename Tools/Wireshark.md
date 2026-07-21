@@ -73,7 +73,13 @@ dns.qry.name
 "Statistics" > "IPv4 Statistics" > Source and destination Addresses > Type ip.dst == 172.22.10.10 (In Display Filter)
 or
 Go to statistics IPv4 addresses--> Source and Destination ---> Then you can apply the filter given 
+tcp.flags.syn == 1 and tcp.flags.ack == 0
+
+-------------------
+Go to statistics IPv4 addresses--> Source and Destination ---> Then you can apply the filter given 
 tcp.flags.syn == 1 and tcp.flags.ack == 0  
+you can find the high number of packets send to10.10.1.10 address and that answer.
+----------------
 ```
 
 ####  DDoS attack launched against a target at 10.10.1.10
