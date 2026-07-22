@@ -1,3 +1,8 @@
+#### Notes
+```bash
+If we use conversations -> it will take parent filter directly
+if we use IPV4 addresses- > then we need to apply filter again
+```
 #### Expert Info Analasys
 ```bash
 Wireshark -> Analyse -> Expert Information
