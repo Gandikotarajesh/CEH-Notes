@@ -1,3 +1,8 @@
+#### To see Image
+```bash
+xdg-open image.jpg
+eog image.jpg
+```
 #### Tools Usage
 ```bash
 Snow, stegsnow     --> TXT
