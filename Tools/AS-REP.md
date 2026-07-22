@@ -13,3 +13,8 @@ python3 GetNPUsers.py SKILL.com/ -no-pass -usersfile ~/users.txt -dc-ip 192.168.
 mentioned FQDN name here or Domain name
 
 ```
+
+#### Imp Notes
+```bash
+check /home/attacker  for the rockyou.txt
+```
