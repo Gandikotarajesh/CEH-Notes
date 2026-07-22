@@ -94,4 +94,10 @@ mqtt && frame contains "High_tempurature"
 ```
 #### Checking passwords with TCP stream
 ```bash
+tcp.stream eq 0
+tcp.stream eq 1
+tcp.stream eq 2
+.
+.
+
 ```
