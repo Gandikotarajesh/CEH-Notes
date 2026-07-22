@@ -1,3 +1,6 @@
+```bash
+ /var/www/html/
+```
 #### Reverse shell path
 ```bash
 /usr/share/webshells/php/php-reverse-shell.php
