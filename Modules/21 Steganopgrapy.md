@@ -17,7 +17,14 @@ Snow --> Hiding and extracting data from a text file.
 # GUI
 OpenStego -> png/bmp
 ```
-
+#### Approach
+```bash
+file
+strings
+exiftool
+binwalk
+steghide
+```
 #### File type check
 ```bash
 file file name
