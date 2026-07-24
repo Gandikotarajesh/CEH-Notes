@@ -19,6 +19,17 @@ dir “sa_code* /s /b”
 ```bash
 type flag.txt
 ```
+#### Locate tool
+```bash
+locate tool
+sudo apt update 
+sudo apt install mlocate -y 
+sudo updatedb
+
+Or
+apt-get install locate -y
+sudo updatedb
+```
 
 #### Optional
 ```bash
