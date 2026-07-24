@@ -39,9 +39,14 @@ also select "Packet details" from the drop down of "Packet list", also change "n
 ```bash
 # IoT Publish Message
 Search for "IOT Publish Message" 
-Edit → find packet →  select packet Details  Search for the string or  use frame.contains "IoT Publish Message
+Edit → find packet →  select packet Details  Search for the string or  use frame.contains "IoT Publish Message"
 
 # Filter with mqqt
+
+or
+# IOT Publish Message
+Filter; MQTT (mqtt.msgtype == 3) and find length of the packet in the lower pane.
+Open in wireshark and apply the filter as mqtt and see the public message and then go to down panel open and see the message length
 ```
 #### Basic ip Filter
 ```bash
