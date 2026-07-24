@@ -5,14 +5,12 @@ eog image.jpg
 ```
 #### Tools Usage
 ```bash
-Snow, stegsnow     --> TXT
-Steghide --> .jpg/ .jpeg / .bmp
-zsteg    --> PNG
-binwalk  --> Any
-exiftool --> Metadata
-Convert TCP --> For hiding data in TCP/IP packet header
-Openstego --> jpg
-Snow --> Hiding and extracting data from a text file.
+TXT                --> Snow, stegsnow
+jpg/jpeg /bmp      --> Steghide
+PNG                --> zsteg   
+Any                --> binwalk
+Metadata           --> exiftool
+jpg                --> Openstego  
 
 # GUI
 OpenStego -> png/bmp
@@ -40,7 +38,7 @@ Steghide extract -sf image.jpg
 with Password
 steghide extract -sf image.jpg -p Password
 
-# Additional detal
+# Additional detail
 
 which steghide
 sudo apt install steghide -y
