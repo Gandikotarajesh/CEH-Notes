@@ -12,11 +12,9 @@ cd /home/kay/.ssh
 ssh -i id_rsa kay@10.48.149.227
 Enter the passphrase
 
-# another method (optional)
-ssh2 id_rsa > hash.txt
-mv id_rsa hash.pem
-ssh -i hash.pem user@ip
-enter passphrase : 
+Now if you are already logged in as a another user
+Cd /home/kay/.ssh/id_rsa kay@ip
+Enter passphrase:
 
 #errors check
 find / -name ssh2john.py 2>/dev/null
