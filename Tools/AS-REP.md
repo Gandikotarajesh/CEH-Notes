@@ -1,4 +1,5 @@
 ```bash
+IP should be in this format a.b.c.0/24
 
 nmap -sC -A - 53,88,389 192.168.0.0/24
 #python3 /root/impacket/examples/GetNPUsers.py SKill.CEH.com/ -no-pass -usersfile username.txt -dc-ip 192.168.0.222
