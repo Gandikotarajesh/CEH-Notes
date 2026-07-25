@@ -1,6 +1,11 @@
 ```bash
  /var/www/html/
 ```
+#### Dirb  (check for .txt files)
+```bash
+dirb <targetDomain> -x eg.txt
+```
+
 #### Reverse shell path
 ```bash
 /usr/share/webshells/php/php-reverse-shell.php
