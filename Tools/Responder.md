@@ -8,3 +8,11 @@ ip a
 Outbut will save
 /usr/share/responder/logs/
 ```
+```bash
+# In Parrot/Kali OS, 
+responder -I eth0
+
+# In windows, try to access the shared resource, logs are stored at usr/share/responder/logs/SMB<filename>
+# To crack that hash, use JohntheRipper
+john SMB<filename>
+```
