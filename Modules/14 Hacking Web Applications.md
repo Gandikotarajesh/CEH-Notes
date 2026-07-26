@@ -47,6 +47,7 @@ you get some value on burp copy that and create the txt file.(1 OR 1=1 #)
 ```
 ####  flag.txt, example.com at IP
 ```bash
+Might be Drupal also
 # Step 1 : Reconnaisance
 nmap -sC -sV -p- <ip>
 Focus on port 80/443 HTTP/HTTPS → since itʼs a web app.
