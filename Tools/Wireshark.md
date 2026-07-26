@@ -45,6 +45,9 @@ also select "Packet details" from the drop down of "Packet list", also change "n
 # IoT Publish Message
 Search for "IOT Publish Message" 
 Edit → find packet →  select packet Details  Search for the string or  use frame.contains "IoT Publish Message"
+oe
+mqtt and mqtt.msgtype == 3 
+
 
 # Filter with mqqt
 
