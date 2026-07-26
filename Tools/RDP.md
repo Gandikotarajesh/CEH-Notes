@@ -9,5 +9,5 @@ Rdesktop <ip>
 
 or
 Sudo apt install reminna
-Reminna -> to open
+type Reminna -> to open
 ```
