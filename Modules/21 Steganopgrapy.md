@@ -18,6 +18,9 @@ jpg                --> Openstego
 # GUI
 OpenStego -> png/bmp
 ```
+```bash
+● ExifTool, Zsteg, Binwalk: For image metadata extraction.
+```
 #### Approach
 ```bash
 file
