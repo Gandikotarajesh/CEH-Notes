@@ -63,3 +63,23 @@ Scan all ports with nmap (-p-). Look for the unknown ports. Use theef RAT to con
 6. now entry the ip of open port and click connect and click on file explorer and find the sa_code.txt. 
 7. or search file in cmd using command --→ dir /b/s “sa_code*” it shows the path.
 ```
+# Tips
+```bash
+#### ProRat
+
+* Execute ProRat
+* Set victim IP and relative port 5110
+* Click to connect and search files.
+
+#### Theef
+
+* Execute Theef
+* Set victim IP and relative ports to 6703 and 2968 (or custom port)
+* Click to connect and open file manger.
+
+#### **NjRat**
+
+* Execute NjRat
+* Insert IP and Port
+* Click on manager and open directory
+```
