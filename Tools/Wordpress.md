@@ -55,9 +55,9 @@ http://10.48.163.74/wordpress/wp-admin
 
 ```
 
-#### Pageid=100
+#### Pageid=x
 ```bash
-Enter the flag value at page_id=100 of example.com
+Enter the flag value at page_id=x of example.com
 Question is basically pointing you towards a WordPress vulnerability assessment using WPScan
 wpscan --version
 # If not, install in Kali:
