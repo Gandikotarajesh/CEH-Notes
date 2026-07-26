@@ -8,7 +8,7 @@ eog image.jpg
 ```
 #### Tools Usage
 ```bash
-TXT                --> Snow, stegsnow
+TXT                --> Snow, stegsnow (system Hacking)
 jpg/jpeg /bmp      --> Steghide
 PNG                --> zsteg   
 Any                --> binwalk
