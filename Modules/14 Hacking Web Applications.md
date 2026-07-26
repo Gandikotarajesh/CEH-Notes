@@ -1,6 +1,10 @@
 ```bash
  /var/www/html/
 ```
+#### Important
+```bash
+do zaproxy for web application questions
+```
 #### Dirb  (check for .txt files)
 ```bash
 dirb <targetDomain> -x eg.txt
