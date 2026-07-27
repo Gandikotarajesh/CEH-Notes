@@ -50,4 +50,8 @@ nc.exe <Linux-IP> 4444 < file.exe (send)
 # Linux
 nc -lvnp 4444 > file.exe
 ```
-
+#### SMB
+```bash
+Open parrot -> Network -> Browse Network -> smb://windows ip  -> admin and pass
+CEH-Tools
+```
